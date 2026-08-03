@@ -19,6 +19,8 @@
 ## Источники исследования
 
 - [2ГИС — карточка объекта](https://2gis.ru/krasnodar/firm/3237490513153270)
+- [Официальный текущий сайт объекта](https://xn--90aciherqj2byb.xn--p1ai/)
+- [Официальный сайт — раздел залов](https://xn--90aciherqj2byb.xn--p1ai/zaly/)
 - [Яндекс Карты — поиск объекта](https://yandex.ru/maps/?text=%D0%A3%20%D0%91%D0%BB%D0%B8%D0%B7%D0%BD%D0%B5%D1%86%D0%BE%D0%B2%2C%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%2C%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D1%85%20%D0%9F%D0%B0%D1%80%D1%82%D0%B8%D0%B7%D0%B0%D0%BD%20535)
 - [Google Maps — поиск объекта](https://www.google.com/maps/search/?api=1&query=%D0%A3%20%D0%91%D0%BB%D0%B8%D0%B7%D0%BD%D0%B5%D1%86%D0%BE%D0%B2%2C%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%2C%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D1%85%20%D0%9F%D0%B0%D1%80%D1%82%D0%B8%D0%B7%D0%B0%D0%BD%20535)
 - [Restoranka — описание и залы](https://restoranka.ru/m/restoraciya/y-bliznecov-restoran-krasnodar/)
