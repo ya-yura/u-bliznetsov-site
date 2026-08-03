@@ -98,6 +98,8 @@ if (dateInput) {
 const bookingForm = document.querySelector('[data-booking-form]');
 const formSuccess = document.querySelector('[data-form-success]');
 const requestType = document.querySelector('[data-request-type]');
+const whatsappSubmit = document.querySelector('[data-whatsapp-submit]');
+const formEdit = document.querySelector('[data-form-edit]');
 
 function showToast(message) {
   if (!toast) return;
@@ -117,10 +119,40 @@ bookingForm?.addEventListener('submit', (event) => {
   const formData = new FormData(bookingForm);
   const guestName = formData.get('name') || 'Гость';
   const type = formData.get('requestType') || formData.get('occasion') || 'Заявка';
+  const rawDate = formData.get('date');
+  const formattedDate = rawDate
+    ? new Intl.DateTimeFormat('ru-RU', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(`${rawDate}T00:00:00`))
+    : 'не указана';
+  const whatsappMessage = [
+    'Здравствуйте! Хочу уточнить возможность бронирования в «У Близнецов».',
+    '',
+    `Имя: ${guestName}`,
+    `Телефон для связи: ${formData.get('phone') || 'не указан'}`,
+    `Дата: ${formattedDate}`,
+    `Гостей: ${formData.get('guests') || 'не указано'}`,
+    `Формат: ${formData.get('occasion') || type}`
+  ].join('\n');
+  const whatsappUrl = `https://wa.me/79182877790?text=${encodeURIComponent(whatsappMessage)}`;
+  if (whatsappSubmit) whatsappSubmit.href = whatsappUrl;
   bookingForm.hidden = true;
   formSuccess.hidden = false;
-  formSuccess.querySelector('h3').textContent = `${guestName}, заявка принята.`;
-  showToast(`${type}: администратор скоро перезвонит.`);
+  formSuccess.querySelector('h3').textContent = `${guestName}, сообщение готово.`;
+  window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+  showToast(`${type}: откройте WhatsApp и отправьте сообщение.`);
+});
+
+formEdit?.addEventListener('click', () => {
+  formSuccess.hidden = true;
+  bookingForm.hidden = false;
+  bookingForm.querySelector('input[name="name"]')?.focus();
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && header?.classList.contains('is-menu-open')) {
+    header.classList.remove('is-menu-open');
+    menuToggle?.setAttribute('aria-expanded', 'false');
+    menuToggle?.focus();
+  }
 });
 
 document.querySelectorAll('a[href="#booking"]').forEach((link) => {

@@ -8,9 +8,32 @@
     <meta property="og:title" content="У Близнецов — ресторан и банкетные залы" />
     <meta property="og:description" content="Собираем людей за одним столом: ужины, семейные вечера и торжества до 400 гостей." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ya-yura.github.io/u-bliznetsov-site/" />
+    <link rel="canonical" href="https://ya-yura.github.io/u-bliznetsov-site/" />
     <title>У Близнецов — ресторан и банкетные залы в Краснодаре</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "У Близнецов",
+        "description": "Ресторанный комплекс и банкетные залы в Краснодаре.",
+        "url": "https://ya-yura.github.io/u-bliznetsov-site/",
+        "telephone": "+7-918-287-77-90",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Красных Партизан, 535",
+          "addressLocality": "Краснодар",
+          "addressCountry": "RU"
+        },
+        "openingHours": "Mo-Su 10:00-00:00",
+        "sameAs": [
+          "https://2gis.ru/krasnodar/firm/3237490513153270",
+          "https://xn--90aciherqj2byb.xn--p1ai/"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div class="site-shell">
@@ -28,11 +51,11 @@
         <div class="header-actions">
           <a class="header-phone" href="tel:+79182877790">+7 918 287-77-90</a>
           <a class="button button-small button-ghost" href="#booking">Забронировать</a>
-          <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-menu-toggle>
+          <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-navigation" data-menu-toggle>
             <span></span><span></span>
           </button>
         </div>
-        <nav class="mobile-nav" aria-label="Мобильная навигация" data-mobile-nav>
+        <nav class="mobile-nav" id="mobile-navigation" aria-label="Мобильная навигация" data-mobile-nav>
           <a href="#about">О комплексе</a>
           <a href="#halls">Залы</a>
           <a href="#food">Кухня</a>
@@ -57,8 +80,8 @@
               <div class="hero-note"><span class="note-star">✦</span><span>7 пространств<br /><strong>для вашего события</strong></span></div>
             </div>
             <div class="hero-float-card">
-              <div class="rating-line"><strong>4,5</strong><span class="stars" aria-label="4,5 из 5">★★★★★</span></div>
-              <p>49 оценок в 2ГИС</p>
+              <div class="rating-line"><strong>4,4</strong><span class="stars" aria-label="4,4 из 5">★★★★★</span></div>
+              <p>50 оценок в 2ГИС</p>
               <div class="float-divider"></div>
               <p><strong>10:00—00:00</strong><br /><span>ежедневно</span></p>
             </div>
@@ -70,7 +93,7 @@
           <div class="signal"><strong>2</strong><span>этажа<br /><b>для разных сценариев</b></span></div>
           <div class="signal"><strong>7</strong><span>залов и lounge bar<br /><b>в одном комплексе</b></span></div>
           <div class="signal"><strong>12—170</strong><span>гостей<br /><b>по формату события</b></span></div>
-          <div class="signal"><strong>4,5</strong><span>из 5<br /><b>49 оценок в 2ГИС</b></span></div>
+          <div class="signal"><strong>4,4</strong><span>из 5<br /><b>50 оценок в 2ГИС</b></span></div>
         </section>
 
         <section class="intro section-pad page-width" id="about">
@@ -129,15 +152,15 @@
           </div>
           <div class="halls-layout">
             <div class="hall-tabs" role="tablist" aria-label="Банкетные залы">
-              <button class="hall-tab is-active" role="tab" aria-selected="true" data-hall="big"><span>Гранд-холл</span><b>до 170 гостей</b></button>
-              <button class="hall-tab" role="tab" aria-selected="false" data-hall="second"><span>2-й этаж</span><b>до 90 гостей</b></button>
-              <button class="hall-tab" role="tab" aria-selected="false" data-hall="stained"><span>Витражный</span><b>до 60 гостей</b></button>
-              <button class="hall-tab" role="tab" aria-selected="false" data-hall="green"><span>Мистер Грин</span><b>20–30 гостей</b></button>
-              <button class="hall-tab" role="tab" aria-selected="false" data-hall="glam"><span>Гламур</span><b>до 34 гостей</b></button>
-              <button class="hall-tab" role="tab" aria-selected="false" data-hall="olive"><span>Оливковый</span><b>10–20 гостей</b></button>
-              <button class="hall-tab" role="tab" aria-selected="false" data-hall="vinegret"><span>Винегрет</span><b>до 14 гостей</b></button>
+              <button class="hall-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="hall-detail-panel" data-hall="big"><span>Гранд-холл</span><b>до 170 гостей</b></button>
+              <button class="hall-tab" type="button" role="tab" aria-selected="false" aria-controls="hall-detail-panel" data-hall="second"><span>2-й этаж</span><b>до 90 гостей</b></button>
+              <button class="hall-tab" type="button" role="tab" aria-selected="false" aria-controls="hall-detail-panel" data-hall="stained"><span>Витражный</span><b>до 60 гостей</b></button>
+              <button class="hall-tab" type="button" role="tab" aria-selected="false" aria-controls="hall-detail-panel" data-hall="green"><span>Мистер Грин</span><b>20–30 гостей</b></button>
+              <button class="hall-tab" type="button" role="tab" aria-selected="false" aria-controls="hall-detail-panel" data-hall="glam"><span>Гламур</span><b>до 34 гостей</b></button>
+              <button class="hall-tab" type="button" role="tab" aria-selected="false" aria-controls="hall-detail-panel" data-hall="olive"><span>Оливковый</span><b>10–20 гостей</b></button>
+              <button class="hall-tab" type="button" role="tab" aria-selected="false" aria-controls="hall-detail-panel" data-hall="vinegret"><span>Винегрет</span><b>до 14 гостей</b></button>
             </div>
-            <div class="hall-detail" data-hall-detail>
+            <div class="hall-detail" id="hall-detail-panel" role="tabpanel" data-hall-detail>
               <div class="hall-detail-image image-hall" role="img" aria-label="Интерьер банкетного зала"></div>
               <div class="hall-detail-copy">
                 <div class="hall-detail-top"><span class="eyebrow"><span class="eyebrow-dot"></span> <span data-hall-label>Гранд-холл</span></span><span class="hall-capacity" data-hall-capacity>до 170 гостей</span></div>
@@ -175,7 +198,7 @@
               <div class="section-kicker">04 / Доверие</div>
               <h2>Гости уже<br /><em>возвращаются.</em></h2>
             </div>
-            <div class="proof-score"><strong>4,5</strong><span>★★★★★</span><small>49 оценок · 2ГИС</small></div>
+          <div class="proof-score"><strong>4,4</strong><span>★★★★★</span><small>50 оценок · 2ГИС</small></div>
           </div>
           <div class="review-grid">
             <article class="review-card review-featured"><span class="quote-mark">“</span><p>Гости отдельно отмечают удобство отдельных залов, внимательную работу администратора и то, что в банкетном формате хватает места для танцев.</p><footer><strong>Сценарий банкета</strong><a href="https://www.restoranka.ru/m/restoraciya/y-bliznecov-restoran-krasnodar/" target="_blank" rel="noreferrer">по открытым отзывам ↗</a></footer></article>
@@ -195,14 +218,14 @@
             <div class="booking-form-wrap">
               <form class="booking-form" data-booking-form>
                 <input type="hidden" name="requestType" value="Банкет" data-request-type />
-                <div class="form-row"><label>Ваше имя<input name="name" type="text" placeholder="Как к вам обращаться" required /></label><label>Телефон<input name="phone" type="tel" placeholder="+7 (___) ___-__-__" required /></label></div>
+                <div class="form-row"><label>Ваше имя<input name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required /></label><label>Телефон<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required /></label></div>
                 <div class="form-row"><label>Желаемая дата<input name="date" type="date" required /></label><label>Гостей<select name="guests"><option>Пока не знаю</option><option>1–10</option><option>11–30</option><option>31–80</option><option>81–180</option><option>180+</option></select></label></div>
                 <label>Что планируем?<select name="occasion"><option>Банкет / торжество</option><option>Столик на ужин</option><option>Меню и условия</option><option>Другое</option></select></label>
-                <label class="checkbox-line"><input type="checkbox" required /> <span>Согласен(а) на обработку данных для ответа на заявку</span></label>
-                <button class="button button-primary form-submit" type="submit">Отправить заявку <span aria-hidden="true">↗</span></button>
-                <p class="form-note">Демо-форма: после согласования сайта подключается к WhatsApp, телефону или CRM ресторана.</p>
+                <label class="checkbox-line"><input type="checkbox" required /> <span>Согласен(а) отправить эти данные ресторану для ответа на заявку</span></label>
+                <button class="button button-primary form-submit" type="submit">Продолжить в WhatsApp <span aria-hidden="true">↗</span></button>
+                <p class="form-note">После отправки откроется WhatsApp с готовым сообщением — останется только нажать «Отправить».</p>
               </form>
-              <div class="form-success" data-form-success hidden><span class="success-icon">✓</span><h3>Заявка принята.</h3><p>Спасибо! Администратор свяжется с вами по указанному номеру.</p><a href="tel:+79182877790" class="button button-dark">Позвонить сейчас</a></div>
+              <div class="form-success" data-form-success hidden><span class="success-icon">✓</span><h3>Сообщение готово.</h3><p>WhatsApp должен открыться в новой вкладке. Если этого не произошло, нажмите кнопку ниже.</p><a href="https://wa.me/79182877790" target="_blank" rel="noreferrer" data-whatsapp-submit class="button button-dark">Открыть WhatsApp <span aria-hidden="true">↗</span></a><button class="form-edit" type="button" data-form-edit>Изменить заявку</button></div>
             </div>
           </div>
         </section>
